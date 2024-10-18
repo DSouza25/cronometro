@@ -1,0 +1,99 @@
+:root{
+    --preto: #05161a;
+    --qpreto: #072e33;
+    --verdeescuro: #0c7075;
+    --verde: #0f969c;
+    --verdeclaro: #6da5c0;
+    --cinza: #294d61;
+}
+.principal{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--qpreto);
+}
+.container{
+    height: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 3.5rem;
+    width: 400px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 5px 5px var(--preto);
+    border: 4px solid var(--verde);
+    border-radius: 15px;
+    color: var(--verde);
+    text-shadow: 0px 4px 4px var(--preto);
+    background-color: transparent;
+    position: relative;
+    font-family: monospace;
+}
+.container h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 8px var(--preto);
+}
+.buttons{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.buttons button{
+    width: 150px;
+    margin: 0px 5px;
+    height: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: transparent;
+    color: var(--verde);
+    padding: 10px;
+    border: 2px solid var(--verde);
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px var(--preto);
+    transition: .3s;
+}
+.buttons button:hover{
+    background-color: var(--verdeclaro);
+    color: var(--qpreto);
+}
+#marcas{
+    color: var(--verdeclaro);
+    font-size: 1.5rem;
+    margin-top: 15px;
+    height: 100px;
+    width: 250px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#marcas::-webkit-scrollbar{
+    width: 6px;
+    color: red;
+    cursor: pointer;
+}
+#marcas::-webkit-scrollbar-thumb {
+    background-color: var(--verde); 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+#marcas p{
+    font-family: monospace;
+}
